@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>593</width>
+    <height>389</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>591</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Veri Okuma</string>
+     </attribute>
+     <widget class="QTextEdit" name="teFolderName">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>260</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbVeriOkuma">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>260</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Klasör Seçiniz</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelDataRead">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>341</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Okunacak Klasörün Etiket Sayıları</string>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Veri Önişleme ve HE | CLAHE</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>261</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Veri Önişleme</string>
+      </property>
+      <widget class="QPushButton" name="pbVeriOnisleme">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Hazırla</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="cbVeriArtirimi">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>121</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Veri Artırımı Uygula</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>231</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Bu adımda HE ve CLAHE işlemleri yapılacaktır</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>561</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Örnek Görüntüler</string>
+      </property>
+      <widget class="QLabel" name="lblOrnekGorsel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>161</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1.Örnek Görüntü</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblOrnekGorsel2">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>20</y>
+         <width>161</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>2.Örnek Görüntü</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblOrnekGorsel3">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>20</y>
+         <width>161</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>3.Örnek Görüntü</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>279</x>
+        <y>-1</y>
+        <width>291</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Eğitme İşlemleri</string>
+      </property>
+      <widget class="QPushButton" name="pbTrainTransferLearning">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>271</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Transfer Learning ile Eğit </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pbCML">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>271</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Klasik Makine Öğrenimi İle Eğit</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Raporlama</string>
+     </attribute>
+     <widget class="QLabel" name="lblAccuracy">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>251</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Makinenizi Öğrettikten sonra Accuracy Grafiği
+buraya gelecektir.
+(Transfer Learning)</string>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblLoss">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>10</y>
+        <width>251</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Makinenizi Öğrettikten sonra Loss Grafiği
+buraya gelecektir.
+(Transfer Learning)</string>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblROC">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>170</y>
+        <width>251</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Makinenizi Öğrettikten sonra  ROC Eğrisi Grafiği
+buraya gelecektir.</string>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblKarmasiklikMatrisi">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>251</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Makinenizi Öğrettikten sonra  Karmaşıklık Matrisi
+(Confusion Matrix)buraya gelecektir.</string>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Tahmin Etme</string>
+     </attribute>
+     <widget class="QTextEdit" name="teTahminEt">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>280</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbTahminEtGorsel">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>280</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Resim Seçiniz...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblDataReadTahmin">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>381</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tahmin etmek istediğiniz fotoğrafı &quot;Resim Seçiniz...&quot; buttonundan seçip
+&quot;Tahmin Et&quot; buttonuna tıklamanız gerekmektedir.</string>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblAcc">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>140</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Accuracy:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>80</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tahmin Edilen:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblDorumu">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>140</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblGercekEtiket">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>30</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblTahminEtiket">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>80</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbTahminEt">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>280</y>
+        <width>75</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tahmin Et</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>593</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
